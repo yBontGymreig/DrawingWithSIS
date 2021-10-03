@@ -1,5 +1,4 @@
 from random import randint
-import colorsys
 from turtle import *
 '''
 forward(50) #travel 50 units forward
@@ -42,7 +41,6 @@ def rainbow_color_cycle(turtle, speed_change = 1):
     red += speed_change
   elif red == 255 and blue > 0:
     blue -= speed_change
-  print(colorsys.rgb_to_hsv(red/255, green/255, blue/255))
   turtle.pencolor(red, green, blue)
 
 def rainbow_color_cycle2(turtle, speed_change = 1):
