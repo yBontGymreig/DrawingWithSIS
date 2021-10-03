@@ -74,7 +74,7 @@ dave.pencolor((255,0,0))
 dave.speed(100)
 angle = 0
 y_pos = 0
-x_pos = 100
+x_pos = 0
 while True:
   dave.goto(x_pos, y_pos)
   dave.pendown()
@@ -82,6 +82,7 @@ while True:
   dave.penup()
   y_pos += 1
   rainbow_color_cycle(dave, 5)
+  
 '''
 Below I have written some useful commands you can use and hack/tweak. They won't be executed because in Python if you put 3 quote marks around a section, it becomes a multi-line comment.
 #getting a random integer(whole number)
